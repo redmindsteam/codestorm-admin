@@ -1,19 +1,24 @@
-import React, {useState} from 'react'
+// import React, {useState} from 'react'
 import {BrowserRouter} from 'react-router-dom'
 import SignedUser from './SignedUser.jsx'
-import UnsignedUser from './UnsignedUser.jsx'
+// import UnsignedUser from './UnsignedUser.jsx'
 import './App.css';
 
 function App() {
-  const [isSigned, setIsSigned] = useState(true)
-
-  return isSigned ? (
+  // const [isSigned, setIsSigned] = useState(true)
+  return(
     <BrowserRouter>
-      <SignedUser />
+     <SignedUser />
     </BrowserRouter>
-  ) : (
-    <UnsignedUser />
   )
+
+  // return isSigned ? (
+  //   <BrowserRouter>
+  //     <SignedUser />
+  //   </BrowserRouter>
+  // ) : (
+  //   <UnsignedUser />
+  // )
 }
 
 export default App;
